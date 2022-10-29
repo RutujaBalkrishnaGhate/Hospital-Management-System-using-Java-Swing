@@ -4,10 +4,26 @@
  */
 package backend;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author rutujaghate
  */
 public class DoctorDirectory {
+    private ArrayList<Doctor> dochistory;
+    
+    public DoctorDirectory(){
+        this.dochistory=new ArrayList<Doctor>();
+    
+    }
+
+    public ArrayList<Doctor> getDochistory() {
+        return dochistory;
+    }
+
+    public void setDochistory(ArrayList<Doctor> dochistory) {
+        this.dochistory = dochistory;
+    }
     
 }

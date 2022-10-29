@@ -10,7 +10,7 @@ import javax.swing.ImageIcon;
  *
  * @author rutujaghate
  */
-public class Patient {
+public class Patient{
    private String patientName;
    private int pid;
    private int age;

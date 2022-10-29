@@ -10,6 +10,8 @@ package backend;
  */
 public class Doctor  {
     private int doctorId;
+    private String doctorName;
+    private String speacialization;
 
     public int getDoctorId() {
         return doctorId;
@@ -34,8 +36,7 @@ public class Doctor  {
     public void setSpeacialization(String speacialization) {
         this.speacialization = speacialization;
     }
-    private String doctorName;
-    private String speacialization;
+    
     
     
     
