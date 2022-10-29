@@ -8,10 +8,6 @@ package backend;
  *
  * @author rutujaghate
  */
-public class Doctor  {
-    private String doctorName;
-    private String speacialization;
-    
-    
+public class Person {
     
 }
