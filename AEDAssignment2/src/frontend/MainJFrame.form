@@ -173,7 +173,7 @@
                           </Group>
                           <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtPassword" alignment="0" pref="452" max="32767" attributes="0"/>
+                              <Component id="txtPassword" alignment="0" pref="478" max="32767" attributes="0"/>
                               <Component id="txtUserName" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="171" max="-2" attributes="0"/>
@@ -282,7 +282,7 @@
                                   <Component id="jButton4" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="133" max="32767" attributes="0"/>
+                          <EmptySpace pref="159" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -416,7 +416,7 @@
                                   <Component id="jScrollPane2" min="-2" pref="511" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="217" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="243" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -617,7 +617,7 @@
                                   <Component id="lblPatientDirectory" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="105" max="32767" attributes="0"/>
+                          <EmptySpace pref="131" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -670,7 +670,7 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                   <SubComponents>
-                    <Component class="javax.swing.JTable" name="tblDirectory2">
+                    <Component class="javax.swing.JTable" name="PatientDirectoryTable">
                       <Properties>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="5" rowCount="0">
@@ -711,12 +711,12 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="222" max="32767" attributes="0"/>
+                          <EmptySpace pref="235" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                                   <Component id="lblHead1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="365" max="32767" attributes="0"/>
+                                  <EmptySpace pref="378" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -917,10 +917,7 @@
                                               <Component id="txtHospitalName1" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="lblDate" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="lblTime" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          </Group>
+                                          <Component id="lblDate" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
@@ -930,15 +927,14 @@
                                           </Group>
                                       </Group>
                                   </Group>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="txtNumber" alignment="0" pref="149" max="32767" attributes="0"/>
-                                      <Component id="txtTime" alignment="0" max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="txtDate" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
                                       <Component id="jButton3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace pref="226" max="32767" attributes="0"/>
+                          <EmptySpace pref="252" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -952,14 +948,12 @@
                               <Component id="lblPatientName1" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtPatientName1" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="lblDate" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtDate" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblPatientID1" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                               <Component id="txtPatientID1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblTime" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtTime" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -1003,7 +997,7 @@
               <SubComponents>
                 <Component class="javax.swing.JTextField" name="txtAge1">
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtNumber">
+                <Component class="javax.swing.JTextField" name="txtDate">
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtPatientID1">
                 </Component>
@@ -1014,19 +1008,9 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtHospitalName1">
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtTime">
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTimeActionPerformed"/>
-                  </Events>
-                </Component>
                 <Component class="javax.swing.JLabel" name="lblHospitalName1">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Hospital Name"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JLabel" name="lblTime">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Time"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtDoctorName">
@@ -1151,7 +1135,7 @@
                                   <Component id="btnBack2" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="304" max="32767" attributes="0"/>
+                          <EmptySpace pref="330" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1663,7 +1647,7 @@
                                   <Component id="btnBack4" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="200" max="32767" attributes="0"/>
+                          <EmptySpace pref="226" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1895,7 +1879,7 @@
                           </Group>
                           <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtPassword2" alignment="0" pref="452" max="32767" attributes="0"/>
+                              <Component id="txtPassword2" alignment="0" pref="478" max="32767" attributes="0"/>
                               <Component id="txtUserName2" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="171" max="-2" attributes="0"/>
@@ -1988,22 +1972,19 @@
                           </Group>
                           <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtPassword3" alignment="0" pref="452" max="32767" attributes="0"/>
+                              <Component id="txtPassword3" alignment="0" pref="478" max="32767" attributes="0"/>
                               <Component id="txtUserName3" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="171" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="253" max="-2" attributes="0"/>
-                                  <Component id="lblAccountLogin2" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="272" max="-2" attributes="0"/>
-                                  <Component id="btnLogin2" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                          <EmptySpace min="-2" pref="272" max="-2" attributes="0"/>
+                          <Component id="btnLogin2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="253" max="-2" attributes="0"/>
+                          <Component id="lblAccountLogin2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -2042,6 +2023,9 @@
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Login"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLogin2ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="lblPassword3">
                   <Properties>
@@ -2099,7 +2083,7 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace pref="56" max="32767" attributes="0"/>
+                          <EmptySpace pref="82" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -2226,7 +2210,7 @@
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="85" max="32767" attributes="0"/>
+                          <EmptySpace pref="111" max="32767" attributes="0"/>
                           <Component id="btnPatientAdministrator" min="-2" pref="96" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
                           <Component id="btnDoctor1" min="-2" pref="96" max="-2" attributes="0"/>
@@ -2307,7 +2291,7 @@
                           <Component id="btnCreatePatient" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="203" max="-2" attributes="0"/>
                           <Component id="btnManagePatient" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="218" max="32767" attributes="0"/>
+                          <EmptySpace pref="244" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
