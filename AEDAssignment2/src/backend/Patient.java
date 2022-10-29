@@ -11,27 +11,25 @@ import javax.swing.ImageIcon;
  * @author rutujaghate
  */
 public class Patient {
-    private String patientName;
-    private int pid; 
-    private int age; 
-    private String gender;  
-    
-    
+   private String patientName;
+   private int pid;
+   private int age;
+   private String gender;
+
+    public String getPatientName() {
+        return patientName;
+    }
+
+    public void setPatientName(String patientName) {
+        this.patientName = patientName;
+    }
+
     public int getPid() {
         return pid;
     }
 
-    public void setPid(int eid) {
+    public void setPid(int pid) {
         this.pid = pid;
-    }
-
-    
-   public String getPatientName() {
-        return patientName;
-    }
-
-    public void setPatientName(String name) {
-        this.patientName = patientName;
     }
 
     public int getAge() {
@@ -49,5 +47,6 @@ public class Patient {
     public void setGender(String gender) {
         this.gender = gender;
     }
+   
     
 }

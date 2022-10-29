@@ -4,6 +4,8 @@
  */
 package frontend;
 
+import java.awt.CardLayout;
+
 /**
  *
  * @author rutujaghate
@@ -687,13 +689,17 @@ public class MainJFrame extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CreatePatientLayout.createSequentialGroup()
                 .addContainerGap(222, Short.MAX_VALUE)
                 .addGroup(CreatePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CreatePatientLayout.createSequentialGroup()
+                        .addGap(69, 69, 69)
+                        .addComponent(lblHead1)
+                        .addContainerGap(365, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CreatePatientLayout.createSequentialGroup()
-                        .addComponent(btnBack)
-                        .addGap(40, 40, 40)
-                        .addComponent(btnCreate)
-                        .addGap(258, 258, 258))
-                    .addGroup(CreatePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CreatePatientLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(CreatePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(CreatePatientLayout.createSequentialGroup()
+                                .addComponent(btnBack)
+                                .addGap(51, 51, 51)
+                                .addComponent(btnCreate))
                             .addGroup(CreatePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addGroup(CreatePatientLayout.createSequentialGroup()
                                     .addComponent(lblPassword1)
@@ -712,12 +718,8 @@ public class MainJFrame extends javax.swing.JFrame {
                                         .addComponent(txtPatientID, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(txtGender, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(txtPatientName, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtUserName1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGap(247, 247, 247))
-                        .addGroup(CreatePatientLayout.createSequentialGroup()
-                            .addGap(69, 69, 69)
-                            .addComponent(lblHead1)
-                            .addContainerGap(365, Short.MAX_VALUE)))))
+                                        .addComponent(txtUserName1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(247, 247, 247))))
         );
         CreatePatientLayout.setVerticalGroup(
             CreatePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -748,11 +750,11 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addGroup(CreatePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(txtPassword1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblPassword1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 174, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
                 .addGroup(CreatePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCreate)
-                    .addComponent(btnBack))
-                .addGap(82, 82, 82))
+                    .addComponent(btnBack)
+                    .addComponent(btnCreate))
+                .addGap(174, 174, 174))
         );
 
         workArea.add(CreatePatient, "card6");
@@ -1730,6 +1732,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void btnPatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPatientActionPerformed
         // TODO add your handling code here:
+         
     }//GEN-LAST:event_btnPatientActionPerformed
 
     private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed

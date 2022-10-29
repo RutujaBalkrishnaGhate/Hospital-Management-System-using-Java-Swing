@@ -11,37 +11,20 @@ import java.util.ArrayList;
  * @author rutujaghate
  */
 public class PatientDirectory {
-    private ArrayList<Patient> patientDirectory;
+    private ArrayList<Patient> history;
     
     public PatientDirectory(){
-        patientDirectory = new ArrayList<Patient>();
+        this.history=new ArrayList<Patient>();
+        
     }
 
-    public ArrayList<Patient> getPatientDirectory() {
-        return patientDirectory;
+    public ArrayList<Patient> getHistory() {
+        return history;
     }
 
-    public void setPartientDirectory(ArrayList<Patient> patientDirectory) {
-        this.patientDirectory = patientDirectory;
+    public void setHistory(ArrayList<Patient> history) {
+        this.history = history;
     }
     
-    public Patient addPatient(){
-        Patient newPatient = new Patient();
-        patientDirectory.add(newPatient);
-        return newPatient;
-    }
-    
-    public void deletePatient(Patient patient){
-        patientDirectory.remove(patient);
-    }
-    
-    public Patient searchPatient(String patientName){
-        for(Patient patient : this.patientDirectory){
-            if(patient.getPatientName().equalsIgnoreCase(patientName)){
-                return patient;
-            }
-        }
-        return null;
-    }
     
 }
