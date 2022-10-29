@@ -103,7 +103,6 @@ public class MainJFrame extends javax.swing.JFrame {
         lblGender = new javax.swing.JLabel();
         BookAppointment = new javax.swing.JPanel();
         txtAge1 = new javax.swing.JTextField();
-        txtDate = new javax.swing.JTextField();
         txtPatientID1 = new javax.swing.JTextField();
         lblDate = new javax.swing.JLabel();
         txtHospitalName1 = new javax.swing.JTextField();
@@ -123,6 +122,7 @@ public class MainJFrame extends javax.swing.JFrame {
         txtGender1 = new javax.swing.JTextField();
         lblHead2 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         AddHospital = new javax.swing.JPanel();
         btnBack2 = new javax.swing.JButton();
         btnSave2 = new javax.swing.JButton();
@@ -886,9 +886,9 @@ public class MainJFrame extends javax.swing.JFrame {
                                     .addComponent(lblNoPhoto, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(13, 13, 13)
                         .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtDate, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton3))))
-                .addContainerGap(252, Short.MAX_VALUE))
+                .addContainerGap(217, Short.MAX_VALUE))
         );
         BookAppointmentLayout.setVerticalGroup(
             BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -896,44 +896,48 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(lblHead2)
                 .addGap(18, 18, 18)
-                .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblPatientName1)
-                    .addComponent(txtPatientName1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblDate)
-                    .addComponent(txtDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblPatientID1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtPatientID1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtAge1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblAge1))
-                .addGap(14, 14, 14)
-                .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblGender1)
-                    .addComponent(txtGender1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblSymptoms)
-                    .addComponent(txtSymptoms, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblDoctorName)
-                    .addComponent(txtDoctorName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblHospitalName1)
-                    .addComponent(txtHospitalName1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCreate1)
-                    .addComponent(jButton3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblNoPhoto, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 199, Short.MAX_VALUE)
-                .addComponent(btnBack1)
-                .addGap(56, 56, 56))
+                .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(BookAppointmentLayout.createSequentialGroup()
+                        .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblPatientName1)
+                            .addComponent(txtPatientName1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblDate))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblPatientID1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtPatientID1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtAge1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblAge1))
+                        .addGap(14, 14, 14)
+                        .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblGender1)
+                            .addComponent(txtGender1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblSymptoms)
+                            .addComponent(txtSymptoms, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblDoctorName)
+                            .addComponent(txtDoctorName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblHospitalName1)
+                            .addComponent(txtHospitalName1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(40, 40, 40)
+                        .addGroup(BookAppointmentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnCreate1)
+                            .addComponent(jButton3))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblNoPhoto, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 199, Short.MAX_VALUE)
+                        .addComponent(btnBack1)
+                        .addGap(56, 56, 56))
+                    .addGroup(BookAppointmentLayout.createSequentialGroup()
+                        .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         workArea.add(BookAppointment, "card7");
@@ -1463,6 +1467,8 @@ public class MainJFrame extends javax.swing.JFrame {
 
         workArea.add(Prescription, "card10");
 
+        PatientLogin.setBackground(new java.awt.Color(255, 255, 153));
+
         btnLogin1.setText("Login");
         btnLogin1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1525,6 +1531,8 @@ public class MainJFrame extends javax.swing.JFrame {
         );
 
         workArea.add(PatientLogin, "card11");
+
+        DoctorLogin.setBackground(new java.awt.Color(255, 204, 255));
 
         txtPassword3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1789,6 +1797,8 @@ public class MainJFrame extends javax.swing.JFrame {
 
         workArea.add(SystemAdminPatientPage, "card15");
 
+        HospitalAdminLogin.setBackground(new java.awt.Color(204, 255, 204));
+
         lblPassword4.setText("Password");
 
         lblUserName4.setText("Username");
@@ -1963,7 +1973,7 @@ public class MainJFrame extends javax.swing.JFrame {
         encounter.setSymptoms(txtSymptoms.getText());
         encounter.setDoctorName(txtDoctorName.getText());
         encounter.setHospitalName(txtHospitalName1.getText());
-        encounter.setDate(txtDate.getText());
+        encounter.setDate(jDateChooser1.getDate().toString());
         
         
         
@@ -1975,7 +1985,9 @@ public class MainJFrame extends javax.swing.JFrame {
             txtSymptoms.setText("");
             txtDoctorName.setText("");
             txtHospitalName1.setText("");
-            txtDate.setText("");
+            //tx(jDateChooser1.getDat);
+            jDateChooser1.setCalendar(null);
+            
            
         
 
@@ -2319,6 +2331,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -2419,7 +2432,6 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JTextField txtBP;
     private javax.swing.JTextField txtCity;
     private javax.swing.JTextField txtCity1;
-    private javax.swing.JTextField txtDate;
     private javax.swing.JTextField txtDoctorName;
     private javax.swing.JTextField txtDoctorName1;
     private javax.swing.JTextField txtDoctorName2;

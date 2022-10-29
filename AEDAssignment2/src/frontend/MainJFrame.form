@@ -929,12 +929,12 @@
                                   </Group>
                                   <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="txtDate" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
+                                      <Component id="jDateChooser1" min="-2" pref="184" max="-2" attributes="0"/>
                                       <Component id="jButton3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace pref="252" max="32767" attributes="0"/>
+                          <EmptySpace pref="217" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -944,60 +944,65 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="lblHead2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblPatientName1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtPatientName1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblDate" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtDate" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="lblPatientName1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtPatientName1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblDate" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="lblPatientID1" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                                      <Component id="txtPatientID1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="txtAge1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lblAge1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="lblGender1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtGender1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="lblSymptoms" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtSymptoms" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="lblDoctorName" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtDoctorName" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="lblHospitalName1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtHospitalName1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="btnCreate1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="lblNoPhoto" min="-2" pref="37" max="-2" attributes="0"/>
+                                  <EmptySpace pref="199" max="32767" attributes="0"/>
+                                  <Component id="btnBack1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="jDateChooser1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblPatientID1" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                              <Component id="txtPatientID1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="txtAge1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblAge1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblGender1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtGender1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblSymptoms" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtSymptoms" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblDoctorName" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtDoctorName" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblHospitalName1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtHospitalName1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="btnCreate1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lblNoPhoto" min="-2" pref="37" max="-2" attributes="0"/>
-                          <EmptySpace pref="199" max="32767" attributes="0"/>
-                          <Component id="btnBack1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
                 <Component class="javax.swing.JTextField" name="txtAge1">
-                </Component>
-                <Component class="javax.swing.JTextField" name="txtDate">
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtPatientID1">
                 </Component>
@@ -1087,6 +1092,8 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
                   </Events>
+                </Component>
+                <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser1">
                 </Component>
               </SubComponents>
             </Container>
@@ -1862,6 +1869,11 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="PatientLogin">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="99" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
                   <CardConstraints cardName="card11"/>
@@ -1955,6 +1967,11 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="DoctorLogin">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="cc" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
                   <CardConstraints cardName="card12"/>
@@ -2328,6 +2345,11 @@
               </SubComponents>
             </Container>
             <Container class="javax.swing.JPanel" name="HospitalAdminLogin">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="cc" green="ff" red="cc" type="rgb"/>
+                </Property>
+              </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
                   <CardConstraints cardName="card16"/>
