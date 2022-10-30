@@ -25,6 +25,11 @@ public class PatientDirectory {
     public void setHistory(ArrayList<Patient> history) {
         this.history = history;
     }
+    public Patient addPatient(){
+        Patient newPatient = new Patient();
+        history.add(newPatient);
+        return newPatient;
+    }
     
     
 }
