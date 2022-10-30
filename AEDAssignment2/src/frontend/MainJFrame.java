@@ -221,7 +221,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jScrollPane4 = new javax.swing.JScrollPane();
         tblManagePatient = new javax.swing.JTable();
         btnSearch2 = new javax.swing.JButton();
-        btnDelete = new javax.swing.JButton();
+        btnDeleteManagePatient = new javax.swing.JButton();
         lblManagePatient = new javax.swing.JLabel();
         lblSearchHospital2 = new javax.swing.JLabel();
         txtsearch2 = new javax.swing.JTextField();
@@ -1624,7 +1624,12 @@ public class MainJFrame extends javax.swing.JFrame {
 
         btnSearch2.setText("Search");
 
-        btnDelete.setText("Delete");
+        btnDeleteManagePatient.setText("Delete");
+        btnDeleteManagePatient.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDeleteManagePatientActionPerformed(evt);
+            }
+        });
 
         lblManagePatient.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lblManagePatient.setText("Manage Patient");
@@ -1677,7 +1682,7 @@ public class MainJFrame extends javax.swing.JFrame {
                             .addGroup(ManagePatientLayout.createSequentialGroup()
                                 .addComponent(btnSearch2)
                                 .addGap(50, 50, 50)
-                                .addComponent(btnDelete)))))
+                                .addComponent(btnDeleteManagePatient)))))
                 .addContainerGap(82, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ManagePatientLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
@@ -1696,7 +1701,7 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addComponent(lblSearchHospital2)
                     .addComponent(txtsearch2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnSearch2)
-                    .addComponent(btnDelete))
+                    .addComponent(btnDeleteManagePatient))
                 .addGap(18, 18, 18)
                 .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnRefresh2)
@@ -1960,8 +1965,8 @@ public class MainJFrame extends javax.swing.JFrame {
         patient.setPid(Integer.parseInt(txtPatientID.getText()));
         patient.setAge(Integer.parseInt(txtAge.getText()));
         patient.setGender(txtGender.getText());
-        patient.setUsername(txtUserName.getText());
-        patient.setPassword(txtPassword.getText());
+        patient.setUsername(txtUserName1.getText());
+        patient.setPassword(txtPassword1.getText());
         
         
         
@@ -1971,8 +1976,8 @@ public class MainJFrame extends javax.swing.JFrame {
             txtPatientID.setText("");
             txtAge.setText("");
             txtGender.setText("");
-            txtUserName.setText("");
-            txtPassword.setText("");
+            txtUserName1.setText("");
+            txtPassword1.setText("");
             
         
     }//GEN-LAST:event_btnSavePatientActionPerformed
@@ -2281,6 +2286,41 @@ public class MainJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPatientIDActionPerformed
 
+    private void btnDeleteManagePatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteManagePatientActionPerformed
+        // TODO add your handling code here:
+        
+       int selectedRow = tblManagePatient.getSelectedRow();
+        if(selectedRow>=0){
+            int selectionButton = JOptionPane.YES_NO_OPTION;
+            int selectionResult = JOptionPane.showConfirmDialog(null, "Are you sure to delete??","Warning",selectionButton);
+            if(selectionResult == JOptionPane.YES_OPTION){
+                Patient patient = (Patient)tblManagePatient.getValueAt(selectedRow, 0);
+                
+                patienthistory.deletePatient(patient);
+                populateTableforManagePatient();
+            }
+        }else{
+            JOptionPane.showMessageDialog(null, "Please select a Row!!");
+        } 
+        
+          /*int selectedRowIndex = tblManagePatient.getSelectedRow();
+        
+        if(selectedRowIndex<0)
+        {
+            JOptionPane.showMessageDialog(this, "Select a row to delete it.");
+            return;
+        }
+        DefaultTableModel model = (DefaultTableModel) tblManagePatient.getModel();
+        Patient selectedPatient = (Patient) model.getValueAt(selectedRowIndex, 0);
+        
+             patienthistory.deletePatient(selectedPatient);
+        
+        JOptionPane.showMessageDialog(this, "Selected Person was deleted.");
+        populateTableforManagePatient();*/
+          
+      
+    }//GEN-LAST:event_btnDeleteManagePatientActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2341,7 +2381,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnCommunityAdmin;
     private javax.swing.JButton btnCreate1;
     private javax.swing.JButton btnCreatePatient;
-    private javax.swing.JButton btnDelete;
+    private javax.swing.JButton btnDeleteManagePatient;
     private javax.swing.JButton btnDoctor;
     private javax.swing.JButton btnDoctor1;
     private javax.swing.JButton btnHospital;
