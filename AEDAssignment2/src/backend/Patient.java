@@ -65,10 +65,10 @@ public class Patient{
     public void setGender(String gender) {
         this.gender = gender;
     }
-  /*  @Override
+    @Override
     public String toString() {
         return this.getPatientName(); //To change body of generated methods, choose Tools | Templates.
-    }*/
+    }
    
     
 }
