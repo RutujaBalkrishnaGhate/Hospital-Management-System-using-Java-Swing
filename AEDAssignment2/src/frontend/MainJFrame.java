@@ -324,10 +324,13 @@ public class MainJFrame extends javax.swing.JFrame {
 
         loginWorkSpaceSys.setBackground(new java.awt.Color(0, 204, 204));
 
+        lblUserName.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         lblUserName.setText("Username");
 
+        lblPassword.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         lblPassword.setText("Password");
 
+        btnLogin.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         btnLogin.setText("Login");
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -355,7 +358,7 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addComponent(lblUserName))
                 .addGap(39, 39, 39)
                 .addGroup(loginWorkSpaceSysLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 479, Short.MAX_VALUE)
+                    .addComponent(txtPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 474, Short.MAX_VALUE)
                     .addComponent(txtUserName))
                 .addGap(171, 171, 171))
             .addGroup(loginWorkSpaceSysLayout.createSequentialGroup()
@@ -383,7 +386,7 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(59, 59, 59)
                 .addComponent(btnLogin)
-                .addContainerGap(377, Short.MAX_VALUE))
+                .addContainerGap(375, Short.MAX_VALUE))
         );
 
         workArea.add(loginWorkSpaceSys, "card2");
@@ -1491,6 +1494,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         PatientLogin.setBackground(new java.awt.Color(255, 255, 153));
 
+        btnLogin1.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         btnLogin1.setText("Login");
         btnLogin1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1498,8 +1502,10 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
+        lblPassword2.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         lblPassword2.setText("Password");
 
+        lblUserName2.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         lblUserName2.setText("Username");
 
         txtPassword2.addActionListener(new java.awt.event.ActionListener() {
@@ -1522,7 +1528,7 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addComponent(lblUserName2))
                 .addGap(39, 39, 39)
                 .addGroup(PatientLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtPassword2, javax.swing.GroupLayout.DEFAULT_SIZE, 479, Short.MAX_VALUE)
+                    .addComponent(txtPassword2, javax.swing.GroupLayout.DEFAULT_SIZE, 474, Short.MAX_VALUE)
                     .addComponent(txtUserName2))
                 .addGap(171, 171, 171))
             .addGroup(PatientLoginLayout.createSequentialGroup()
@@ -1540,17 +1546,17 @@ public class MainJFrame extends javax.swing.JFrame {
             .addGroup(PatientLoginLayout.createSequentialGroup()
                 .addGap(78, 78, 78)
                 .addComponent(lblHead7)
-                .addGap(41, 41, 41)
+                .addGap(56, 56, 56)
                 .addGroup(PatientLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblUserName2)
-                    .addComponent(txtUserName2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44)
+                    .addComponent(txtUserName2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblUserName2))
+                .addGap(29, 29, 29)
                 .addGroup(PatientLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtPassword2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblPassword2))
                 .addGap(57, 57, 57)
                 .addComponent(btnLogin1)
-                .addContainerGap(353, Short.MAX_VALUE))
+                .addContainerGap(351, Short.MAX_VALUE))
         );
 
         workArea.add(PatientLogin, "card11");
@@ -1563,6 +1569,7 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
+        btnLogin2.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         btnLogin2.setText("Login");
         btnLogin2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1570,8 +1577,10 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
+        lblPassword3.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         lblPassword3.setText("Password");
 
+        lblUserName3.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         lblUserName3.setText("Username");
 
         lblHead8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -1588,7 +1597,7 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addComponent(lblUserName3))
                 .addGap(39, 39, 39)
                 .addGroup(DoctorLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtPassword3, javax.swing.GroupLayout.DEFAULT_SIZE, 479, Short.MAX_VALUE)
+                    .addComponent(txtPassword3, javax.swing.GroupLayout.DEFAULT_SIZE, 474, Short.MAX_VALUE)
                     .addComponent(txtUserName3))
                 .addGap(171, 171, 171))
             .addGroup(DoctorLoginLayout.createSequentialGroup()
@@ -1616,7 +1625,7 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addComponent(txtPassword3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(47, 47, 47)
                 .addComponent(btnLogin2)
-                .addContainerGap(389, Short.MAX_VALUE))
+                .addContainerGap(387, Short.MAX_VALUE))
         );
 
         workArea.add(DoctorLogin, "card12");
@@ -1780,14 +1789,14 @@ public class MainJFrame extends javax.swing.JFrame {
                         .addGap(105, 105, 105))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AdministratorFirstPageLayout.createSequentialGroup()
                         .addComponent(lblHead10)
-                        .addGap(313, 313, 313))))
+                        .addGap(325, 325, 325))))
         );
         AdministratorFirstPageLayout.setVerticalGroup(
             AdministratorFirstPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AdministratorFirstPageLayout.createSequentialGroup()
-                .addGap(113, 113, 113)
+                .addGap(118, 118, 118)
                 .addComponent(lblHead10)
-                .addGap(68, 68, 68)
+                .addGap(63, 63, 63)
                 .addGroup(AdministratorFirstPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnDoctor1)
                     .addComponent(btnPatientAdministrator)
@@ -1837,8 +1846,16 @@ public class MainJFrame extends javax.swing.JFrame {
 
         HospitalAdminLogin.setBackground(new java.awt.Color(204, 255, 204));
 
+        txtUserName4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUserName4ActionPerformed(evt);
+            }
+        });
+
+        lblPassword4.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         lblPassword4.setText("Password");
 
+        lblUserName4.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         lblUserName4.setText("Username");
 
         txtPassword4.addActionListener(new java.awt.event.ActionListener() {
@@ -1847,6 +1864,7 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
+        jButton5.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jButton5.setText("Login");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1877,26 +1895,26 @@ public class MainJFrame extends javax.swing.JFrame {
                         .addGap(407, 407, 407)
                         .addComponent(jButton5))
                     .addGroup(HospitalAdminLoginLayout.createSequentialGroup()
-                        .addGap(301, 301, 301)
+                        .addGap(298, 298, 298)
                         .addComponent(lblHead9)))
-                .addContainerGap(380, Short.MAX_VALUE))
+                .addContainerGap(383, Short.MAX_VALUE))
         );
         HospitalAdminLoginLayout.setVerticalGroup(
             HospitalAdminLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(HospitalAdminLoginLayout.createSequentialGroup()
-                .addGap(139, 139, 139)
+                .addGap(113, 113, 113)
                 .addComponent(lblHead9)
                 .addGap(59, 59, 59)
                 .addGroup(HospitalAdminLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblUserName4)
-                    .addComponent(txtUserName4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(txtUserName4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblUserName4))
+                .addGap(41, 41, 41)
                 .addGroup(HospitalAdminLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblPassword4)
                     .addComponent(txtPassword4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(55, 55, 55)
                 .addComponent(jButton5)
-                .addContainerGap(302, Short.MAX_VALUE))
+                .addContainerGap(303, Short.MAX_VALUE))
         );
 
         workArea.add(HospitalAdminLogin, "card16");
@@ -2359,6 +2377,10 @@ public class MainJFrame extends javax.swing.JFrame {
     private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSearchActionPerformed
+
+    private void txtUserName4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUserName4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtUserName4ActionPerformed
 
     /**
      * @param args the command line arguments
