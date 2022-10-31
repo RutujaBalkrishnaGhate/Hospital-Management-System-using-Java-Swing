@@ -1636,6 +1636,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         tblManagePatient.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+                {"Rutu", "123", "24", "Female"},
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},
@@ -1644,15 +1645,7 @@ public class MainJFrame extends javax.swing.JFrame {
             new String [] {
                 "Patient Name", "Patient ID", "Age", "Gender"
             }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
+        ));
         jScrollPane4.setViewportView(tblManagePatient);
 
         btnSearch2.setText("Search");
