@@ -453,37 +453,40 @@ public class MainJFrame extends javax.swing.JFrame {
         PatientLayout.setHorizontalGroup(
             PatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PatientLayout.createSequentialGroup()
+                .addGroup(PatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnRefresh)
+                    .addGroup(PatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(PatientLayout.createSequentialGroup()
+                            .addGap(79, 79, 79)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(PatientLayout.createSequentialGroup()
+                            .addGap(318, 318, 318)
+                            .addComponent(lblManage))))
+                .addContainerGap(86, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PatientLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(PatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PatientLayout.createSequentialGroup()
-                        .addGap(220, 220, 220)
-                        .addComponent(lblManage))
-                    .addGroup(PatientLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(PatientLayout.createSequentialGroup()
-                        .addGap(37, 37, 37)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PatientLayout.createSequentialGroup()
                         .addComponent(lblSearchHospital)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(txtsearch, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(37, 37, 37)
-                        .addComponent(btnSearch))
-                    .addGroup(PatientLayout.createSequentialGroup()
-                        .addGap(120, 120, 120)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnSearch)
+                        .addGap(260, 260, 260))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PatientLayout.createSequentialGroup()
                         .addComponent(btnView, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(39, 39, 39)
-                        .addComponent(btnRefresh)
-                        .addGap(48, 48, 48)
-                        .addComponent(jButton4)))
-                .addContainerGap(159, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton4)
+                        .addGap(131, 131, 131))))
         );
         PatientLayout.setVerticalGroup(
             PatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PatientLayout.createSequentialGroup()
-                .addGap(58, 58, 58)
+                .addGap(81, 81, 81)
                 .addComponent(lblManage)
-                .addGap(26, 26, 26)
+                .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
+                .addGap(18, 18, 18)
                 .addGroup(PatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblSearchHospital)
                     .addComponent(txtsearch, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -491,9 +494,10 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(PatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnView)
-                    .addComponent(btnRefresh)
                     .addComponent(jButton4))
-                .addContainerGap(290, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(btnRefresh)
+                .addContainerGap(251, Short.MAX_VALUE))
         );
 
         workArea.add(Patient, "card3");
@@ -1889,22 +1893,22 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addComponent(txtPassword4)
                     .addComponent(txtUserName4))
                 .addGap(79, 79, 79))
-            .addGroup(HospitalAdminLoginLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HospitalAdminLoginLayout.createSequentialGroup()
+                .addContainerGap(341, Short.MAX_VALUE)
                 .addGroup(HospitalAdminLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(HospitalAdminLoginLayout.createSequentialGroup()
-                        .addGap(407, 407, 407)
-                        .addComponent(jButton5))
-                    .addGroup(HospitalAdminLoginLayout.createSequentialGroup()
-                        .addGap(298, 298, 298)
-                        .addComponent(lblHead9)))
-                .addContainerGap(383, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HospitalAdminLoginLayout.createSequentialGroup()
+                        .addComponent(lblHead9)
+                        .addGap(340, 340, 340))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HospitalAdminLoginLayout.createSequentialGroup()
+                        .addComponent(jButton5)
+                        .addGap(419, 419, 419))))
         );
         HospitalAdminLoginLayout.setVerticalGroup(
             HospitalAdminLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(HospitalAdminLoginLayout.createSequentialGroup()
-                .addGap(113, 113, 113)
+                .addGap(108, 108, 108)
                 .addComponent(lblHead9)
-                .addGap(59, 59, 59)
+                .addGap(64, 64, 64)
                 .addGroup(HospitalAdminLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtUserName4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblUserName4))
@@ -2262,11 +2266,22 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void btnLogin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogin1ActionPerformed
         // TODO add your handling code here:
-        workArea.removeAll();
+            if (txtUserName2.getText().equals("Patient") && txtPassword2.getText().equals("***")) {
+            JOptionPane.showMessageDialog(null, "Login successful!");
+       workArea.removeAll();
         workArea.add(Patient);
         workArea.repaint();
         workArea.revalidate();
         populateTableforPatient();
+        }else
+            {
+            JOptionPane.showMessageDialog(null, "Invalid credentials");
+            return;
+       }
+        
+        
+        
+        
     }//GEN-LAST:event_btnLogin1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -2328,11 +2343,20 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void btnLogin2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogin2ActionPerformed
         // TODO add your handling code here:
+        
+        if (txtUserName3.getText().equals("Doctor") && txtPassword3.getText().equals("***")) {
+            JOptionPane.showMessageDialog(null, "Login successful!");
         workArea.removeAll();
         workArea.add(PatientDirectory);
         workArea.repaint();
         workArea.revalidate();
         populateTableforPatientDirectory();
+        }else
+            {
+            JOptionPane.showMessageDialog(null, "Invalid credentials");
+            return;
+       }  
+       
     }//GEN-LAST:event_btnLogin2ActionPerformed
 
     private void txtPatientIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPatientIDActionPerformed
