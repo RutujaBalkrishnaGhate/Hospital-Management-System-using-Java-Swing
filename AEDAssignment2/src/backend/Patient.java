@@ -67,7 +67,7 @@ public class Patient{
     }
     @Override
     public String toString() {
-        return this.getPatientName(); //To change body of generated methods, choose Tools | Templates.
+        return patientName; //To change body of generated methods, choose Tools | Templates.
     }
    
     

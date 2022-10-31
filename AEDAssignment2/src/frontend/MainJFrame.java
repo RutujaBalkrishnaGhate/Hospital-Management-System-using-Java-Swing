@@ -24,11 +24,13 @@ public class MainJFrame extends javax.swing.JFrame {
     HospitalDirectory hospitalDirectory = new HospitalDirectory();
     EncounterDirectory encounterhistory = new EncounterDirectory();
     PatientDirectory patienthistory=new PatientDirectory();
+    PatientDirectory patienthistory1=new PatientDirectory();
     /**
      * Creates new form MainJFrame
      */
     public MainJFrame() {
         initComponents();
+        
     }
 
     /**
@@ -229,6 +231,20 @@ public class MainJFrame extends javax.swing.JFrame {
         btnRefresh2 = new javax.swing.JButton();
         btnView3 = new javax.swing.JButton();
         btnbackmanagepatient = new javax.swing.JButton();
+        lblPassword5 = new javax.swing.JLabel();
+        lblAge4 = new javax.swing.JLabel();
+        txtPatientID4 = new javax.swing.JTextField();
+        lblUserName5 = new javax.swing.JLabel();
+        txtUserName5 = new javax.swing.JTextField();
+        lblPatientID4 = new javax.swing.JLabel();
+        lblPatientName4 = new javax.swing.JLabel();
+        lblGender4 = new javax.swing.JLabel();
+        txtPatientName4 = new javax.swing.JTextField();
+        txtGender4 = new javax.swing.JTextField();
+        txtPassword5 = new javax.swing.JTextField();
+        txtAge4 = new javax.swing.JTextField();
+        UpdateManagePatient = new javax.swing.JButton();
+        SaveManagePatient = new javax.swing.JButton();
         AdministratorFirstPage = new javax.swing.JPanel();
         btnCommunity = new javax.swing.JButton();
         btnHospital = new javax.swing.JButton();
@@ -1687,58 +1703,143 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
+        lblPassword5.setText("Password");
+
+        lblAge4.setText("Age");
+
+        lblUserName5.setText("User Name");
+
+        lblPatientID4.setText("Patient ID");
+
+        lblPatientName4.setText("Patient Name");
+
+        lblGender4.setText("Gender");
+
+        UpdateManagePatient.setText("Update");
+        UpdateManagePatient.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                UpdateManagePatientActionPerformed(evt);
+            }
+        });
+
+        SaveManagePatient.setText("Save");
+        SaveManagePatient.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SaveManagePatientActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout ManagePatientLayout = new javax.swing.GroupLayout(ManagePatient);
         ManagePatient.setLayout(ManagePatientLayout);
         ManagePatientLayout.setHorizontalGroup(
             ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ManagePatientLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lblManagePatient)
+                .addGap(342, 342, 342))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ManagePatientLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 636, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(80, 80, 80))
             .addGroup(ManagePatientLayout.createSequentialGroup()
                 .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(ManagePatientLayout.createSequentialGroup()
-                        .addGap(347, 347, 347)
-                        .addComponent(lblManagePatient))
+                        .addGap(204, 204, 204)
+                        .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, ManagePatientLayout.createSequentialGroup()
+                                .addComponent(lblAge4)
+                                .addGap(116, 116, 116)
+                                .addComponent(txtAge4, javax.swing.GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, ManagePatientLayout.createSequentialGroup()
+                                .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ManagePatientLayout.createSequentialGroup()
+                                            .addComponent(lblPatientName4)
+                                            .addGap(61, 61, 61))
+                                        .addGroup(ManagePatientLayout.createSequentialGroup()
+                                            .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(lblPatientID4)
+                                                .addComponent(lblUserName5)
+                                                .addComponent(lblPassword5))
+                                            .addGap(74, 74, 74)))
+                                    .addGroup(ManagePatientLayout.createSequentialGroup()
+                                        .addComponent(lblGender4)
+                                        .addGap(95, 95, 95)))
+                                .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtPatientName4)
+                                    .addComponent(txtPatientID4)
+                                    .addComponent(txtGender4)
+                                    .addComponent(txtUserName5)
+                                    .addComponent(txtPassword5))))
+                        .addGap(69, 69, 69)
+                        .addComponent(SaveManagePatient))
                     .addGroup(ManagePatientLayout.createSequentialGroup()
-                        .addGap(119, 119, 119)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 636, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(ManagePatientLayout.createSequentialGroup()
-                        .addGap(203, 203, 203)
-                        .addComponent(lblSearchHospital2)
-                        .addGap(18, 18, 18)
-                        .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtsearch2, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnView3, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnRefresh2)
+                        .addGap(152, 152, 152)
+                        .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnView3, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(ManagePatientLayout.createSequentialGroup()
-                                .addComponent(btnSearch2)
-                                .addGap(50, 50, 50)
-                                .addComponent(btnDeleteManagePatient)))))
-                .addContainerGap(82, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ManagePatientLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnbackmanagepatient)
-                .addGap(332, 332, 332))
+                                .addComponent(lblSearchHospital2)
+                                .addGap(18, 18, 18)
+                                .addComponent(txtsearch2, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(35, 35, 35)
+                        .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnSearch2)
+                            .addComponent(btnRefresh2))
+                        .addGap(53, 53, 53)
+                        .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnDeleteManagePatient)
+                            .addComponent(UpdateManagePatient))
+                        .addGap(26, 26, 26)
+                        .addComponent(btnbackmanagepatient)))
+                .addContainerGap(113, Short.MAX_VALUE))
         );
         ManagePatientLayout.setVerticalGroup(
             ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ManagePatientLayout.createSequentialGroup()
-                .addGap(59, 59, 59)
+                .addGap(22, 22, 22)
                 .addComponent(lblManagePatient)
-                .addGap(54, 54, 54)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblSearchHospital2)
                     .addComponent(txtsearch2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnSearch2)
-                    .addComponent(btnDeleteManagePatient))
+                    .addComponent(btnDeleteManagePatient)
+                    .addComponent(btnbackmanagepatient))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnView3)
+                    .addComponent(btnRefresh2)
+                    .addComponent(UpdateManagePatient))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblPatientName4)
+                        .addComponent(txtPatientID4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(ManagePatientLayout.createSequentialGroup()
+                        .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblPatientID4)
+                            .addComponent(txtPatientName4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(39, 39, 39)))
                 .addGap(18, 18, 18)
                 .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnRefresh2)
-                    .addComponent(btnView3))
+                    .addComponent(lblAge4)
+                    .addComponent(txtAge4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SaveManagePatient))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblGender4)
+                    .addComponent(txtGender4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtUserName5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblUserName5))
                 .addGap(18, 18, 18)
-                .addComponent(btnbackmanagepatient)
-                .addGap(113, 113, 113))
+                .addGroup(ManagePatientLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtPassword5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPassword5))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         workArea.add(ManagePatient, "card13");
@@ -1994,23 +2095,23 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void btnSavePatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSavePatientActionPerformed
         // TODO add your handling code here:
-        String name;
+       /* String name;
         int pid;
         int age;
         String gender;
         String symptoms;
         String username;
-        String password;
+        String password;*/
         
         
         
-        Patient patient = patienthistory.addPatient();
-        patient.setPatientName(txtPatientName.getText());
-        patient.setPid(Integer.parseInt(txtPatientID.getText()));
-        patient.setAge(Integer.parseInt(txtAge.getText()));
-        patient.setGender(txtGender.getText());
-        patient.setUsername(txtUserName1.getText());
-        patient.setPassword(txtPassword1.getText());
+        Patient patient1 = patienthistory1.addPatient();
+        patient1.setPatientName(txtPatientName.getText());
+        patient1.setPid(Integer.parseInt(txtPatientID.getText()));
+        patient1.setAge(Integer.parseInt(txtAge.getText()));
+        patient1.setGender(txtGender.getText());
+        patient1.setUsername(txtUserName1.getText());
+        patient1.setPassword(txtPassword1.getText());
         
         
         
@@ -2178,6 +2279,34 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void btnView3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnView3ActionPerformed
         // TODO add your handling code here:
+        int selectedRowIndex=tblManagePatient.getSelectedRow();
+        if(selectedRowIndex<0){
+            JOptionPane.showMessageDialog(this,"Please select a row to view the Employee details.");
+            return;
+        }
+        
+        DefaultTableModel model=(DefaultTableModel) tblManagePatient.getModel();
+        Patient selectedPatient=(Patient)model.getValueAt(selectedRowIndex, 0);
+        
+     
+         
+        txtPatientName4.setText(selectedPatient.getPatientName());
+        txtPatientID4.setText(String.valueOf(selectedPatient.getPid()));
+        txtAge4.setText(String.valueOf(selectedPatient.getAge()));
+        txtGender4.setText(selectedPatient.getGender());
+        txtUserName5.setText(selectedPatient.getUsername());
+        txtPassword5.setText(selectedPatient.getPassword());
+        
+        
+        
+         
+        //lblNoPhoto.setIcon(selectedEmployee.getPhoto());
+        
+        
+        
+       
+        
+                      
     }//GEN-LAST:event_btnView3ActionPerformed
 
     private void btnCommunityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCommunityActionPerformed
@@ -2368,9 +2497,9 @@ public class MainJFrame extends javax.swing.JFrame {
             int selectionButton = JOptionPane.YES_NO_OPTION;
             int selectionResult = JOptionPane.showConfirmDialog(null, "Are you sure to delete??","Warning",selectionButton);
             if(selectionResult == JOptionPane.YES_OPTION){
-                Patient patient = (Patient)tblManagePatient.getValueAt(selectedRow, 0);
+                Patient patient1 = (Patient)tblManagePatient.getValueAt(selectedRow, 0);
                 
-                patienthistory.deletePatient(patient);
+                patienthistory1.deletePatient(patient1);
                 populateTableforManagePatient();
             }
         }else{
@@ -2402,6 +2531,48 @@ public class MainJFrame extends javax.swing.JFrame {
     private void txtUserName4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUserName4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtUserName4ActionPerformed
+
+    private void UpdateManagePatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateManagePatientActionPerformed
+        // TODO add your handling code here:
+         txtAge4.setEditable(true);
+            txtPatientName4.setEditable(true);
+            txtPatientID4.setEditable(true);
+            txtGender.setEnabled(true);
+            txtUserName5.setEnabled(true);
+            txtPassword5.setEnabled(true);
+            
+            SaveManagePatient.setEnabled(true);
+            UpdateManagePatient.setEnabled(false);
+    }//GEN-LAST:event_UpdateManagePatientActionPerformed
+
+    private void SaveManagePatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveManagePatientActionPerformed
+        // TODO add your handling code here:
+        Patient patient1 = patienthistory1.addPatient();
+        patient1.setPatientName(txtPatientName4.getText());
+        patient1.setPid(Integer.parseInt(txtPatientID4.getText()));
+        patient1.setAge(Integer.parseInt(txtAge4.getText()));
+        patient1.setGender(txtGender4.getText());
+        patient1.setUsername(txtUserName5.getText());
+        patient1.setPassword(txtPassword5.getText());
+        
+        txtAge4.setEditable(false);
+        txtPatientID4.setEditable(false);
+        txtPatientName4.setEditable(false);
+        txtGender4.setEnabled(false);
+        txtPassword5.setEnabled(false);
+        txtUserName5.setEnabled(false);
+        
+        SaveManagePatient.setEnabled(false);
+        UpdateManagePatient.setEnabled(true);
+        
+        int selectedRowIndex=tblManagePatient.getSelectedRow();
+        
+       DefaultTableModel model=(DefaultTableModel) tblManagePatient.getModel();
+        Patient selectedPatient=(Patient)model.getValueAt(selectedRowIndex, 0);
+        
+        patienthistory1.deletePatient(selectedPatient);
+        populateTableforManagePatient();
+    }//GEN-LAST:event_SaveManagePatientActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2453,7 +2624,9 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JTable PatientDirectoryTable;
     private javax.swing.JPanel PatientLogin;
     private javax.swing.JPanel Prescription;
+    private javax.swing.JButton SaveManagePatient;
     private javax.swing.JPanel SystemAdminPatientPage;
+    private javax.swing.JButton UpdateManagePatient;
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnBack1;
     private javax.swing.JButton btnBack2;
@@ -2520,6 +2693,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel lblAge1;
     private javax.swing.JLabel lblAge2;
     private javax.swing.JLabel lblAge3;
+    private javax.swing.JLabel lblAge4;
     private javax.swing.JLabel lblArea;
     private javax.swing.JLabel lblArea1;
     private javax.swing.JLabel lblCity;
@@ -2534,6 +2708,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel lblGender1;
     private javax.swing.JLabel lblGender2;
     private javax.swing.JLabel lblGender3;
+    private javax.swing.JLabel lblGender4;
     private javax.swing.JLabel lblHead;
     private javax.swing.JLabel lblHead1;
     private javax.swing.JLabel lblHead10;
@@ -2560,15 +2735,18 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel lblPassword2;
     private javax.swing.JLabel lblPassword3;
     private javax.swing.JLabel lblPassword4;
+    private javax.swing.JLabel lblPassword5;
     private javax.swing.JLabel lblPatientDirectory;
     private javax.swing.JLabel lblPatientID;
     private javax.swing.JLabel lblPatientID1;
     private javax.swing.JLabel lblPatientID2;
     private javax.swing.JLabel lblPatientID3;
+    private javax.swing.JLabel lblPatientID4;
     private javax.swing.JLabel lblPatientName;
     private javax.swing.JLabel lblPatientName1;
     private javax.swing.JLabel lblPatientName2;
     private javax.swing.JLabel lblPatientName3;
+    private javax.swing.JLabel lblPatientName4;
     private javax.swing.JLabel lblSearchHospital;
     private javax.swing.JLabel lblSearchHospital1;
     private javax.swing.JLabel lblSearchHospital2;
@@ -2582,6 +2760,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel lblUserName2;
     private javax.swing.JLabel lblUserName3;
     private javax.swing.JLabel lblUserName4;
+    private javax.swing.JLabel lblUserName5;
     private javax.swing.JLabel lblZipCode;
     private javax.swing.JLabel lblZipCode1;
     private javax.swing.JPanel loginWorkSpaceSys;
@@ -2593,6 +2772,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JTextField txtAge1;
     private javax.swing.JTextField txtAge2;
     private javax.swing.JTextField txtAge3;
+    private javax.swing.JTextField txtAge4;
     private javax.swing.JTextField txtArea;
     private javax.swing.JTextField txtArea1;
     private javax.swing.JTextField txtBP;
@@ -2605,6 +2785,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JTextField txtGender1;
     private javax.swing.JTextField txtGender2;
     private javax.swing.JTextField txtGender3;
+    private javax.swing.JTextField txtGender4;
     private javax.swing.JTextField txtHeartRate;
     private javax.swing.JTextField txtHospitalName;
     private javax.swing.JTextField txtHospitalName1;
@@ -2618,14 +2799,17 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JTextField txtPassword2;
     private javax.swing.JTextField txtPassword3;
     private javax.swing.JTextField txtPassword4;
+    private javax.swing.JTextField txtPassword5;
     private javax.swing.JTextField txtPatientID;
     private javax.swing.JTextField txtPatientID1;
     private javax.swing.JTextField txtPatientID2;
     private javax.swing.JTextField txtPatientID3;
+    private javax.swing.JTextField txtPatientID4;
     private javax.swing.JTextField txtPatientName;
     private javax.swing.JTextField txtPatientName1;
     private javax.swing.JTextField txtPatientName2;
     private javax.swing.JTextField txtPatientName3;
+    private javax.swing.JTextField txtPatientName4;
     private javax.swing.JTextField txtPrecription;
     private javax.swing.JTextField txtPrecription1;
     private javax.swing.JTextField txtSymptoms;
@@ -2638,6 +2822,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JTextField txtUserName2;
     private javax.swing.JTextField txtUserName3;
     private javax.swing.JTextField txtUserName4;
+    private javax.swing.JTextField txtUserName5;
     private javax.swing.JTextField txtZipCode;
     private javax.swing.JTextField txtZipCode1;
     private javax.swing.JTextField txtsearch;
@@ -2703,14 +2888,14 @@ public void populateTableforPatientDirectory()
     DefaultTableModel model=(DefaultTableModel) tblManagePatient.getModel();
     model.setRowCount(0);
 
-    for(Patient patient: patienthistory.getHistory()){
+    for(Patient patient1: patienthistory1.getHistory()){
      Object[] row=new Object[6];
-     row[0]=patient.getPatientName();
-     row[1]=patient.getPid();
-     row[2]=patient.getAge();
-     row[3]=patient.getGender();
-     row[4]=patient.getUsername();
-     row[5]=patient.getPassword();
+     row[0]=patient1;
+     row[1]=patient1.getPid();
+     row[2]=patient1.getAge();
+     row[3]=patient1.getGender();
+     row[4]=patient1.getUsername();
+     row[5]=patient1.getPassword();
      
      model.addRow(row);
     }

@@ -2122,66 +2122,144 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="lblManagePatient" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="342" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jScrollPane4" min="-2" pref="636" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                      </Group>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="347" max="-2" attributes="0"/>
-                                  <Component id="lblManagePatient" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane4" min="-2" pref="636" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="203" max="-2" attributes="0"/>
-                                  <Component id="lblSearchHospital2" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="txtsearch2" alignment="0" min="-2" pref="151" max="-2" attributes="0"/>
-                                      <Component id="btnView3" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="btnRefresh2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="204" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="btnSearch2" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                                          <Component id="btnDeleteManagePatient" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblAge4" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
+                                          <Component id="txtAge4" pref="188" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <Component id="lblPatientName4" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="61" pref="61" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" attributes="0">
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Component id="lblPatientID4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="lblUserName5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="lblPassword5" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="lblGender4" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="txtPatientName4" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="txtPatientID4" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="txtGender4" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="txtUserName5" max="32767" attributes="0"/>
+                                              <Component id="txtPassword5" alignment="0" max="32767" attributes="0"/>
+                                          </Group>
                                       </Group>
                                   </Group>
+                                  <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="SaveManagePatient" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="152" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="btnView3" min="-2" pref="118" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="lblSearchHospital2" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="txtsearch2" min="-2" pref="151" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="btnSearch2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnRefresh2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="btnDeleteManagePatient" min="-2" max="-2" attributes="0"/>
+                                      <Component id="UpdateManagePatient" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                  <Component id="btnbackmanagepatient" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="82" max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Component id="btnbackmanagepatient" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="332" max="-2" attributes="0"/>
+                          <EmptySpace pref="113" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                           <Component id="lblManagePatient" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Component id="jScrollPane4" min="-2" pref="176" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblSearchHospital2" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtsearch2" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btnSearch2" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btnDeleteManagePatient" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnbackmanagepatient" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="btnView3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnRefresh2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="UpdateManagePatient" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="1" groupAlignment="3" attributes="0">
+                                  <Component id="lblPatientName4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtPatientID4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="lblPatientID4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtPatientName4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="btnRefresh2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="btnView3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblAge4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtAge4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="SaveManagePatient" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblGender4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtGender4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txtUserName5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblUserName5" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="btnbackmanagepatient" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txtPassword5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblPassword5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2285,6 +2363,64 @@
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnbackmanagepatientActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lblPassword5">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Password"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lblAge4">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Age"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtPatientID4">
+                </Component>
+                <Component class="javax.swing.JLabel" name="lblUserName5">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="User Name"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtUserName5">
+                </Component>
+                <Component class="javax.swing.JLabel" name="lblPatientID4">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Patient ID"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lblPatientName4">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Patient Name"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lblGender4">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Gender"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtPatientName4">
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtGender4">
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtPassword5">
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtAge4">
+                </Component>
+                <Component class="javax.swing.JButton" name="UpdateManagePatient">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Update"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="UpdateManagePatientActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="SaveManagePatient">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Save"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SaveManagePatientActionPerformed"/>
                   </Events>
                 </Component>
               </SubComponents>
