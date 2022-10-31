@@ -1496,7 +1496,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         workArea.add(Prescription, "card10");
 
-        PatientLogin.setBackground(new java.awt.Color(255, 255, 153));
+        PatientLogin.setBackground(new java.awt.Color(204, 204, 255));
 
         btnLogin1.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         btnLogin1.setText("Login");
@@ -1636,16 +1636,20 @@ public class MainJFrame extends javax.swing.JFrame {
 
         tblManagePatient.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Rutu", "123", "24", "Female"},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
                 "Patient Name", "Patient ID", "Age", "Gender"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane4.setViewportView(tblManagePatient);
 
         btnSearch2.setText("Search");
