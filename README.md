@@ -1,4 +1,4 @@
-# AEDAssignmentno2
+# Hospital Management System
 Hospital Management System
 
 Description:-This is an application for the Hospital Management System. In this application, a system administrator can log in and manage the entire application. The following are additional logins: System Administrator, Community Administrator, Hospital Administrator, Doctor and Patient.
